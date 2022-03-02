@@ -1,5 +1,5 @@
 public String FormController(@ModelAttribute FormData form) {
-	if (form.getTitle == "" && form.getTitle == null) {
+	if (form.getTitle == "" || form.getTitle == null) {
 		return "false";
 	}
 	PostRepository.save(form);
