@@ -1,0 +1,15 @@
+public String FormController(@ModelAttribute FormData form) {
+<<<<<<< HEAD
+	if (form.getTitle == "" || form.getTitle == null) {
+		return "false";
+	}
+=======
+	
+	if (form.getTitle == "") {
+		return "fail";
+	}
+
+>>>>>>> lion
+	PostRepository.save(form);
+	return "ok";
+}

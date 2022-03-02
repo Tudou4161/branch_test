@@ -1,0 +1,9 @@
+public String FormController(@ModelAttribute FormData form) {
+	
+	if (form.getTitle == "") {
+		return "fail";
+	}
+
+	PostRepository.save(form);
+	return "ok";
+}
