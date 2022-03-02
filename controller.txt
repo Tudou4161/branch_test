@@ -1,0 +1,5 @@
+public String FormController(@ModelAttribute FormData form) {
+
+	PostRepository.save(form);
+	return "ok";
+}
